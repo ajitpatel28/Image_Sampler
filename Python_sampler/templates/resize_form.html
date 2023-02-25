@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resize Images</title>
+</head>
+<body>
+    <h1>Resize Images</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="width">Width:</label>
+        <input type="number" name="width" id="width" required>
+        <br>
+        <label for="height">Height:</label>
+        <input type="number" name="height" id="height" required>
+        <br>
+        <label for="images">Select images:</label>
+        <input type="file" name="images" id="images" accept="image/*" multiple required>
+        <br>
+        <input type="submit" value="Resize">
+    </form>
+</body>
+</html>
