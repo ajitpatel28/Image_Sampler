@@ -1,0 +1,13 @@
+[package]
+name = "testing"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+custom_image_resizer = {path=".."}
+image = "0.24.5"
+
+
+[package.metadata.release]
+publish = false
